@@ -1,0 +1,15 @@
+.average-duration-chart {
+  &__container {
+    transform: translate(0, 30%);
+  }
+
+  .recharts-surface {
+    overflow: visible;
+  }
+
+  &__tooltip {
+    background-color: var(--background-100);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

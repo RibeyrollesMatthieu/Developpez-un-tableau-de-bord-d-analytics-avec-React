@@ -1,0 +1,46 @@
+.card {
+  padding: 2rem;
+  background-color: var(--background-400);
+  border-radius: 0.3125rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-size: cover;
+    border-radius: 0.3125rem;
+
+    &--calories {
+      background-color: rgba(#ff0000, 0.066125);
+      background-image: url('/src/assets/profilepage/calories.png');
+    }
+
+    &--protein {
+      background-color: rgba(#4ab8ff, 0.1);
+      background-image: url('/src/assets/profilepage/protein.png');
+    }
+
+    &--carbs {
+      background-color: rgba(#fdcc0c, 0.101652);
+      background-image: url('/src/assets/profilepage/carbs.png');
+    }
+
+    &--fat {
+      background-color: rgba(#fd5181, 0.1);
+      background-image: url('/src/assets/profilepage/fat.png');
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &__sub-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground-disabled);
+  }
+}

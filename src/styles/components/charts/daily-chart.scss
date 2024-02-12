@@ -1,0 +1,10 @@
+.daily-chart {
+  overflow: hidden;
+
+  &__tooltip {
+    background-color: var(--primary);
+    color: var(--background-100);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

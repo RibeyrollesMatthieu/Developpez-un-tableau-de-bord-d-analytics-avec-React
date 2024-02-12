@@ -1,0 +1,49 @@
+@use '@styles/reset.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --foreground: rgb(2, 2, 3);
+  --foreground-disabled: rgb(116, 121, 140);
+  --background-100: rgba(255, 255, 255);
+  --background-400: rgb(251, 251, 251);
+  --background-900: rgb(39, 44, 47);
+  --primary: rgb(255, 1, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100vh; /* fallback */
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.root-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+  padding: 4.25rem 2rem;
+  overflow: auto;
+
+  & > div {
+    margin-inline: auto;
+    max-width: 1200px;
+  }
+}
+
+.text-accent {
+  color: var(--primary);
+}

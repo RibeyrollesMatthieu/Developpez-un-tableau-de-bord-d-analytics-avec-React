@@ -1,0 +1,10 @@
+.stats-chart {
+  overflow: hidden;
+
+  &__tick {
+    fill: var(--background-100);
+    opacity: 1;
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+}

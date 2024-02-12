@@ -1,0 +1,26 @@
+.sidebar {
+  background-color: var(--foreground);
+  color: var(--background-100);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__copyright {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    padding: 1.5rem;
+  }
+}
